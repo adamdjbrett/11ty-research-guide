@@ -1,5 +1,9 @@
 <div class="accordion" id="accordion{{metadata.pets_sidebar.key}}">
 
+
+<a class="btn btn-outline-danger col-12  mt-1 mb-1" href="{{metadata.url}}"> Home Page</a>
+
+
 <div class="accordion-item">
 <h3 class="accordion-header">
 <button class="accordion-button btn-maron" type="button" data-bs-toggle="collapse" accesskey="{{metadata.pets_sidebar.key}}" 
@@ -11,7 +15,7 @@ data-bs-target="#collapse{{metadata.pets_sidebar.key}}" aria-expanded="true" ari
 <div class="accordion-body p-1">
 <div class="ms-3">
 {% for si in collections.pets | reverse %}
-<a class="btn btn-outline-danger col-12  mt-1 mb-1" href="{{si.url}}"> {{si.data.title}}</a>{% endfor %}
+<a class="btn btn-outline-danger col-12  mt-1 mb-1" href="#{{si.url}}"> {{si.data.title}}</a>{% endfor %}
 </div>
 </div>
 </div>
@@ -28,7 +32,7 @@ data-bs-target="#collapse{{metadata.recipes_sidebar.key}}" aria-expanded="false"
 <div class="accordion-body p-1">
 <div class="ms-3">
 {% for si in collections.recipes | reverse %}
-<a class="btn btn-outline-danger col-12  mt-1 mb-1" href="{{si.url}}"> {{si.data.title}}</a>{% endfor %}
+<a class="btn btn-outline-danger col-12  mt-1 mb-1" href="#{{si.url}}"> {{si.data.title}}</a>{% endfor %}
 </div>
 </div>
 </div>

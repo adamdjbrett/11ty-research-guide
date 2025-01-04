@@ -3,4 +3,5 @@ export default {
 		"portfolios"
 	],
 	"layout": "post.njk",
+    "date": "Last Modified",
 };

@@ -1,3 +1,4 @@
+# SEO setup
 title: "PERSEPHONE UNIVERSITY"
 description: "A description here.."
 favicon: "/logo.svg"
@@ -11,6 +12,12 @@ metasocial:
  - twitteruser: "@username"
  - twitter: "https://x.com/user"
 
+# Color Configuration
+primary_color: D81717
+secondary_color: ec5033
+dark_color: c93c22
+
+# Setup Header Area
 header: 
  logo: /logo.svg
  title1: PERSEPHONE
@@ -34,32 +41,40 @@ header:
  sub_title: "An 11ty Library Research Guide Template"
  info: "This 11ty Library Research Guide Template is desigend to be a database free start to creating a long term #minicomp style library and research guide."
 
+# Pets Sidebar Setup
 pets_sidebar: 
  title: Pets
+ collections: pets
  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
  key: .
 
+# recipes Sidebar Setup
 recipes_sidebar: 
  title: Recipes
+ collections: recipes
  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
  key: l
 
+# Portfolios Sidebar Setup
 portfolios_sidebar: 
  title: Portfolio
+ collections: portfolios
  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
  key: r
 
- 
+# Sidebar Partials Setup 
 sidebar:
  rss_title: RSS Feeds
  author_title: Author
 
+# Footer Notes Setup
 foot_notes: 
  last_update: Last Updated
  url: URL
  print: Print Page
  print_key: p
 
+# Footer Setup
 footer: 
  nav: 
     - title: Nav 1
@@ -124,6 +139,7 @@ footer:
   text4: Adam DJ Brett
   text4_url: https://adamdjbrett.com
 
+# Website Author
 author: 
  name: "Adam DJ Brett"
  email: "info@adamdjbrett.com"

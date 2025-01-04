@@ -4,7 +4,7 @@
 <h3 class="card-header text-maron"><strong>{{title or metadata.title}}</strong></h3>
 <div class="card-body">
 <heading-anchors>
-{{ content | safe }}
+<article>{{ content | safe }}</article>
 </heading-anchors>
 </div>
 </div>
@@ -13,9 +13,9 @@
 <h3 class="card-header text-maron"><strong>{{metadata.pets_sidebar.title}}</strong></h3>
 <div class="card-body">
 <heading-anchors>
-<p>{{metadata.pets_sidebar.text}}</p>
+<article><p>{{metadata.pets_sidebar.text}}</p></article>
 <ul>{% for pet in collections.pets| limit(5) %}
-<li><a href="{{pet.url}}">{{pet.data.title}}</a></li>{% endfor %}
+<li><h4><a href="{{pet.url}}">{{pet.data.title}}</a></h4><p class="article_content">{{pet.data.excerpt }}<br/><a href="{{pet.url}}">Read More</a></p></li>{% endfor %}
 <li><a href="/pet">Explore all Pet article</a></li>
 </ul>
 </heading-anchors>
@@ -26,9 +26,9 @@
 <h3 class="card-header text-maron"><strong>{{metadata.portfolios_sidebar.title}}</strong></h3>
 <div class="card-body">
 <heading-anchors>
-<p>{{metadata.portfolios_sidebar.text}}</p>
+<article><p>{{metadata.portfolios_sidebar.text}}</p></article>
 <ul>{% for portfolio in collections.portfolios | limit(5) %}
-<li><a href="{{portfolio.url}}">{{portfolio.data.title}}</a></li>{% endfor %}
+<li><h4><a href="{{portfolio.url}}">{{portfolio.data.title}}</a></h4><p class="article_content">{{portfolio.data.excerpt }}<br/><a href="{{portfolio.url}}">Read More</a></p></li>{% endfor %}
 <li><a href="/portfolio">Explore all POrtfolio article</a></li>
 </ul>
 </heading-anchors>
@@ -40,9 +40,9 @@
 <h3 class="card-header text-maron"><strong>{{metadata.recipes_sidebar.title}}</strong></h3>
 <div class="card-body">
 <heading-anchors>
-<p>{{metadata.recipes_sidebar.text}}</p>
-<ul>{% for receipe in collections.receipes | limit(5) %}
-<li><a href="{{receipe.url}}">{{receipe.data.title}}</a></li>{% endfor %}
+<article><p>{{metadata.recipes_sidebar.text}}</p></article>
+<ul>{% for recipe in collections.recipes | limit(5) %}
+<li><h4><a href="{{recipe.url}}">{{recipe.data.title}}</a></h4><p class="article_content">{{recipe.data.excerpt }}<br/><a href="{{recipe.url}}">Read More</a></p></li>{% endfor %}
 <li><a href="/recipe">Explore all Recipes article</a></li>
 </ul>
 </heading-anchors>

@@ -3,4 +3,5 @@ export default {
 		"pets"
 	],
 	"layout": "post.njk",
+    "date": "Last Modified",
 };

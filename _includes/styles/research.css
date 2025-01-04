@@ -11,30 +11,36 @@ font-family: 'Arial Black', sans-serif;
 .accordion-collapse,.accordion-button{background-color: transparent; }
 .accordion-button:not(.collapsed) {
 color: white;
-background-color: #c93c22;
+background-color: #{{metadata.secondary_color}};
 box-shadow: none;
 }
 .text-small {font-size:14px;}
-.btn-maron:hover {background-color: #ac0d0d; color:White;}
-.btn-maron {border: solid 1px #ac0d0d; margin: 4px; }
-.text-maron,.border-danger {color:#ac0d0d;}
-a {color:#c93c22;}
-.btn-danger,.btn-outline-danger:hover {background-color: #ac0d0d;}
-.btn-outline-danger {border-color: #ac0d0d; color:#ac0d0d;}
-.actives {background-color:  #ac0d0d; color:white;}
-.bg-maron {background-color: #ac0d0d; color:white;}
-.bg-orange {background-color: #c93c22; color:white;}
-.text-orange,.border-orange{color:#ec5033;}
-.btn-orange,.orange{background-color:#ec5033;color:#fff}
-.btn-orange:hover{background-color:#c93c22;color:#fff}
-.btn-outline-orange{border:1px solid #c93c22;}
-.btn-outline-orange:hover {background-color:#c93c22;color:White;}
-blockquote{border-left:6px solid #ec5033;margin:1.5em 10px;padding:.5em 10px;quotes:"\201C""\201D""\2018""\2019"}
-blockquote:before{color:#ec5033;content:open-quote;font-size:4em;line-height:.1em;margin-right:.25em;vertical-align:-.4em}
+.btn-maron:hover {background-color: #{{metadata.primary_color}}; color:White;}
+.btn-maron {border: solid 1px #{{metadata.primary_color}}; margin: 4px; }
+.text-maron,.border-danger {color:#{{metadata.primary_color}};}
+a {color:#{{metadata.secondary_color}};}
+.btn-danger,.btn-outline-danger:hover {background-color: #{{metadata.primary_color}};}
+.btn-outline-danger {border-color: #{{metadata.primary_color}}; color:#{{metadata.primary_color}};}
+.actives {background-color:  #{{metadata.primary_color}}; color:white;}
+.bg-maron {background-color: #{{metadata.primary_color}}; color:white;}
+.bg-orange {background-color: #{{metadata.secondary_color}}; color:white;}
+.text-orange,.border-orange{color:#{{metadata.dark_color}};}
+.btn-orange,.orange{background-color:#{{metadata.dark_color}};color:#fff}
+.btn-orange:hover{background-color:#{{metadata.secondary_color}};color:#fff}
+.btn-outline-orange{border:1px solid #{{metadata.secondary_color}};}
+.btn-outline-orange:hover {background-color:#{{metadata.secondary_color}};color:White;}
+blockquote{border-left:6px solid #{{metadata.dark_color}};margin:1.5em 10px;padding:.5em 10px;quotes:"\201C""\201D""\2018""\2019"}
+blockquote:before{color:#{{metadata.dark_color}};content:open-quote;font-size:4em;line-height:.1em;margin-right:.25em;vertical-align:-.4em}
 blockquote p{display:inline}
 .form-control:focus {
 box-shadow:none;
-border-color:#c93c22;
+border-color:#{{metadata.secondary_color}};
+}
+.article_content {
+  overflow: hidden;
+  max-width: 300ch;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 footer a {color:white;text-decoration: none; font-weight: 400;}
 .pagefind-ui__drawer.svelte-e9gkc3{
