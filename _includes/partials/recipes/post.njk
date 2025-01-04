@@ -1,0 +1,43 @@
+---
+layout: base.njk
+---
+{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
+{%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
+<main class="print">
+{% include "partials/header.njk" %}
+<div class="container ">
+<div class="row mts-5">
+
+<div class="col-md-3 p-3">
+{% include "partials/portfolios/collections_post.njk" %}
+{% include "partials/author.njk" %}
+</div>
+
+<div class="col-md-9 p-3">
+<div class="card mb-3">
+<h3 class="card-header text-maron"><strong><a href="{{page.url}}" class="no-deco text-maron">{{title}}</a></strong></h3>
+<div class="card-body">
+<heading-anchors>
+<article>{{ content | safe }}</article>
+</heading-anchors>
+</div>
+<div class="card-footer">
+{%- if collections.portfolios %}
+{%- set previousPost = collections.portfolios | getPreviousCollectionItem %}
+{%- set nextPost = collections.portfolios | getNextCollectionItem %}
+{%- if nextPost or previousPost %}
+<div class="row">
+<div class="col-6">{%- if previousPost %}← Previous<br> <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}</div>
+<div class="col-6 text-end">{%- if nextPost %}Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}</div>
+</div>
+{%- endif %}
+{%- endif %}
+</div>
+</div>
+
+
+</div>
+</div>
+{% include "partials/footer_note.njk" %}
+</main>
+{% include "partials/article_print.njk" %}
