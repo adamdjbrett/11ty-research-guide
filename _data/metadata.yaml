@@ -6,7 +6,8 @@ image: "/logo.svg"
 language: "en"
 locale: "en_US"
 formspree_id: "https://formspree.io/f/"
-url: "https://research.000000076.xyz" #localhost:8080 or research.000000076.xyz
+# url: "https://research.000000076.xyz" #localhost:8080 or research.000000076.xyz
+url: http://localhost:8080
 metasocial: 
  - facebook: "https://www.facebook.com/"
  - twitteruser: "@username"
@@ -40,6 +41,13 @@ header:
  default_breadcumb: Home Page
  sub_title: "An 11ty Library Research Guide Template"
  info: "This 11ty Library Research Guide Template is desigend to be a database free start to creating a long term #minicomp style library and research guide."
+
+# Home Sidebar Setup
+homes_sidebar: 
+ title: Home
+ collections: homepages
+ text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+ key: "1"
 
 # Pets Sidebar Setup
 pets_sidebar: 

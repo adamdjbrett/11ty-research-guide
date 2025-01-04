@@ -28,7 +28,7 @@ a {color:#{{metadata.secondary_color}};}
 .btn-orange,.orange{background-color:#{{metadata.dark_color}};color:#fff}
 .btn-orange:hover{background-color:#{{metadata.secondary_color}};color:#fff}
 .btn-outline-orange{border:1px solid #{{metadata.secondary_color}};}
-.btn-outline-orange:hover {background-color:#{{metadata.secondary_color}};color:White;}
+.btn-outline-orange:hover,.actives {background-color:#{{metadata.secondary_color}};color:White;}
 blockquote{border-left:6px solid #{{metadata.dark_color}};margin:1.5em 10px;padding:.5em 10px;quotes:"\201C""\201D""\2018""\2019"}
 blockquote:before{color:#{{metadata.dark_color}};content:open-quote;font-size:4em;line-height:.1em;margin-right:.25em;vertical-align:-.4em}
 blockquote p{display:inline}
@@ -36,6 +36,7 @@ blockquote p{display:inline}
 box-shadow:none;
 border-color:#{{metadata.secondary_color}};
 }
+img,iframe {max-width:100%;}
 .article_content {
   overflow: hidden;
   max-width: 300ch;

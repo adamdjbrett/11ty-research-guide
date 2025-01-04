@@ -1,8 +1,12 @@
 ---
-title: "Chocolate Chip Cookies"
-description: "A chocolate chip cookie is a drop cookie that originated in the United States and features chocolate chips as its distinguishing ingredient."
-excerpt: 
- - text: A chocolate chip cookie is a drop cookie that originated in the United States and features chocolate chips as its distinguishing ingredient.The traditional recipe combines a dough composed of butter and both brown and white sugar with semi-sweet chocolate chips. Variations include recipes with other types of chocolate as well as additional ingredients such as nuts or oatmeal.
+title: "Welcome"
+description: "A Welcome description"
+excerpt:
+ - text:  Welcome to libguide project, this is a open source code to help who need build and develop libguide site with low cost.
+date: 2025-01-03
+tags:
+ - welcome
+ - welcome home
 ---
 
 A chocolate chip cookie is a drop cookie that originated in the United States and features chocolate chips as its distinguishing ingredient.

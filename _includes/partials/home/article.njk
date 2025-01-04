@@ -1,0 +1,13 @@
+<div class="col-md-9 p-3">
+{% for home in collections.homepages | reverse %}
+<div class="card mb-3" id="{{home.url}}">
+<h3 class="card-header text-maron"><strong><a href="{{home.url}}" class="no-deco text-maron">{{home.data.title}}</a></strong></h3>
+<div class="card-body">
+<heading-anchors>
+<article>{% for j in home.data.excerpt %}<p>{{j.text}}</p>{% endfor %}</article>
+<p><a href="{{home.url}}">Read More</a></p>
+</heading-anchors>
+</div>
+</div>
+{% endfor %}
+</div>
