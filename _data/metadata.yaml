@@ -6,17 +6,17 @@ image: "/logo.svg"
 language: "en"
 locale: "en_US"
 formspree_id: "https://formspree.io/f/"
-# url: "https://research.000000076.xyz" #localhost:8080 or research.000000076.xyz
-url: http://localhost:8080
+url: "https://research.000000076.xyz" #localhost:8080 or research.000000076.xyz
+#url: http://localhost:8080
 metasocial: 
  - facebook: "https://www.facebook.com/"
  - twitteruser: "@username"
  - twitter: "https://x.com/user"
 
 # Color Configuration
-primary_color: D81717
-secondary_color: ec5033
-dark_color: c93c22
+primary_color: FF4136
+secondary_color: 7fdbff
+dark_color: 001f3f
 
 # Setup Header Area
 header: 
@@ -26,7 +26,7 @@ header:
  title_key: h
  title_subdomain: LIBRARIES
  title_subdomain_key: s
- subdomain_url: https://adamDJbrett.com
+ subdomain_url: https://000000076.xyz/
  contact:
    button: Contact Us
    url: /contact
@@ -152,7 +152,7 @@ footer:
           url: /
           key: g
  creativecommons:
-  image: https://i.creativecommons.org/l/by-nc/4.0/88x31.png
+  image: /img/88x31.png
   text: Except where otherwise noted, this work by Perspheone University and Demeter Libraries is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
  copyrights: 
   text1: Built with
