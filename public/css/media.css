@@ -1,0 +1,23 @@
+@media print {
+@page {margin-bottom: 0px; margin-top: 0px;}
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+font-size: 12px;
+  }
+h1 {font-size: 30px;}
+h2 {font-size: 26px;}
+h3 {font-size: 22px;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+header, footer, aside, nav,.print, form, iframe, .menu, .hero, .adslot {
+  display: none;
+}
+.print {display:none;}
+a::after {
+  content: " (" attr(href) ")";
+}
+
+
+}
