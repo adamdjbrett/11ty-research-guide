@@ -1,0 +1,127 @@
+title: "PERSEPHONE UNIVERSITY"
+description: "A description here.."
+favicon: "/pu.png"
+image: "/pu.png"
+language: "en"
+locale: "en_US"
+formspree_id: "https://formspree.io/f/"
+url: "localhost:8080"
+metasocial: 
+ - facebook: "https://www.facebook.com/"
+ - twitteruser: "@username"
+ - twitter: "https://x.com/user"
+
+header: 
+ logo: /pu.png
+ title1: PERSEPHONE
+ title2: UNIVERSITY
+ title_key: h
+ title_subdomain: LIBRARIES
+ title_subdomain_key: s
+ subdomain_url: https://adamdjbrett.com
+ contact:
+   button: Contact Us
+   url: /contact
+   key: c
+ breadcumb: 
+  - title: Presphone University
+    url: / 
+    key: a
+  - title: Presphone University Libraries
+    url: /
+    key: b
+ default_breadcumb: Home Page
+ sub_title: "An Undergraduate's Guide to Funding and Publishing Research"
+ info: This guide is designed for undergraduate students who are looking for research opportunities as an extension of or in addition to their coursework.
+
+pets_sidebar: 
+ title: Pets
+ key: .
+
+recipes_sidebar: 
+ title: Recipes
+ key: l
+
+portfolios_sidebar: 
+ title: Portfolio
+ key: r
+
+ 
+sidebar:
+ rss_title: RSS Feeds
+ author_title: Author
+
+foot_notes: 
+ last_update: Last Updated
+ url: URL
+ print: Print Page
+ print_key: p
+
+footer: 
+ nav: 
+    - title: Nav 1
+      item: 
+        - nav: nav1
+          url: /
+          key: q
+        - nav: nav2
+          url: /
+          key: w
+        - nav: nav3
+          url: /
+          key: e
+        - nav: nav4
+          url: /
+          key: r
+        - nav: nav5
+          url: /
+          key: t
+    - title: Nav 2
+      item: 
+        - nav: nav1
+          url: /
+          key: z
+        - nav: nav2
+          url: /
+          key: x
+        - nav: nav3
+          url: /
+          key: v
+        - nav: nav4
+          url: /
+          key: n
+        - nav: nav5
+          url: /
+          key: m
+    - title: Nav 3
+      item: 
+        - nav: nav1
+          url: /
+          key: f
+        - nav: nav2
+          url: /
+          key: k
+        - nav: nav3
+          url: /
+          key: j
+        - nav: nav4
+          url: /
+          key: h
+        - nav: nav5
+          url: /
+          key: g
+ creativecommons:
+  image: https://i.creativecommons.org/l/by-nc/4.0/88x31.png
+  text: Except where otherwise noted, this work by SBU Libraries is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+ copyrights: 
+  text1: Built with
+  text2: 11ty
+  text2_url: https://11ty.dev
+  text3: Develope by
+  text4: Adam Dj Brett
+  text4_url: https://adamdjbrett.com
+
+author: 
+ name: "Adam Dj Brett"
+ email: "info@adamdjbrett.com"
+ url: "https://adamdjbrett.com"
