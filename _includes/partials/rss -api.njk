@@ -1,0 +1,8 @@
+<div class="card mt-5">
+<div class="card-header bg-orange"><h4>{{metadata.sidebar.rss_title}}</h4></div>
+<div class="card-body">
+<ul class="text-small">
+{% for s in news.item | limit (15) %}<li class="mb-3"><a class="no-deco text-maron" href="{{s.link}}"> {{s.title}}</a></li>{% endfor %}
+</ul>
+</div>
+</div>

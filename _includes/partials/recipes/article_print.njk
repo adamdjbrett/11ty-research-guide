@@ -15,7 +15,7 @@
 <h3 class="mt-3 text-maron"><strong>{{title}}</strong></h3>
 {{content|safe}}
 </div>
-{% for pet in collections.portfolios | reverse %}
+{% for pet in collections.recipes | reverse %}
 <div class="col-12 text-start border-bottom">
 <h3 class="mt-3 text-maron"><strong>{{pet.data.title}}</strong></h3>
 <article>{% for j in pet.data.excerpt %}<p>{{j.text}}</p>{% endfor %}</article>

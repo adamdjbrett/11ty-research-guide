@@ -9,7 +9,7 @@ layout: base.njk
 <div class="row mts-5">
 
 <div class="col-md-3 p-3">
-{% include "partials/portfolios/collections_post.njk" %}
+{% include "partials/recipes/collections_post.njk" %}
 {% include "partials/author.njk" %}
 </div>
 
@@ -22,9 +22,9 @@ layout: base.njk
 </heading-anchors>
 </div>
 <div class="card-footer">
-{%- if collections.portfolios %}
-{%- set previousPost = collections.portfolios | getPreviousCollectionItem %}
-{%- set nextPost = collections.portfolios | getNextCollectionItem %}
+{%- if collections.recipes %}
+{%- set previousPost = collections.recipes | getPreviousCollectionItem %}
+{%- set nextPost = collections.recipes | getNextCollectionItem %}
 {%- if nextPost or previousPost %}
 <div class="row">
 <div class="col-6">{%- if previousPost %}← Previous<br> <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}</div>

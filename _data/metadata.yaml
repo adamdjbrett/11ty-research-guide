@@ -70,9 +70,23 @@ portfolios_sidebar:
  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
  key: r
 
-# Sidebar Partials Setup 
+# Sidebar and RSS Partials Setup 
 sidebar:
- rss_title: RSS Feeds
+ rss:
+  title: RSS Feeds
+  item: 
+   - name: Adam Dj Brett
+     link: https://adamdjbrett.com
+   - name: 11ty Official
+     link: https://11ty.dev
+   - name: Netlify
+     link: https://netlify.com
+   - name: Vercel
+     link: https://vercel.com
+   - name: Cloudflare
+     link: https://cloudflare.com
+   - name: Github
+     link: https://github.com
  author_title: Author
 
 # Footer Notes Setup
@@ -81,6 +95,7 @@ foot_notes:
  url: URL
  print: Print Page
  print_key: p
+
 
 # Footer Setup
 footer: 
