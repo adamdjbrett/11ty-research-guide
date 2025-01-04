@@ -1,0 +1,32 @@
+<section class="printer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 p-3 text-center">
+<img class="img-fluid" width="80" height="80" alt="{{metadata.title}}" src="{{metadata.header.logo}}"/> 
+<h1><strong>
+{{metadata.header.title1}} <span class="text-maron">{{metadata.header.title2}}</span> | {{metadata.header.title_subdomain}}
+</strong></h1>
+<h2><strong>{{metadata.header.sub_title}}</strong></h2>
+<p class="text-start">
+{{metadata.header.info}}
+</p>
+<hr/>
+<div class="col-12 text-start border-bottom">
+<h3 class="mt-3 text-maron"><strong>{{title}}</strong></h3>
+{{content|safe}}
+</div>
+{% for pet in collections.pets | reverse %}
+<div class="col-12 text-start border-bottom">
+<h3 class="mt-3 text-maron"><strong>{{pet.data.title}}</strong></h3>
+<article>{% for j in pet.data.excerpt %}<p>{{j.text}}</p>{% endfor %}</article>
+<p><a href="{{pet.url}}">Read More</a></p>
+</div>
+{% endfor %}
+<div class="col-12 text-start p-3">
+<p>
+<strong>Last Updated:</strong> {{ page.date | readableDate }} | <strong>URL</strong> : {{metadata.url}}{{ page.url}} </p>
+</div>
+</div>
+</div>
+</div>
+</section>

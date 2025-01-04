@@ -1,8 +1,8 @@
 ---
-layout: "home.njk"
-title: Home Pages
+layout: "pets.njk"
+title: Pets Pages
 description: this is descriptions
-breadcumb: Home Page
+breadcumb: Pet Page
 date: Last Modified
 tags: 
  - hello world

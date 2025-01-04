@@ -1,7 +1,7 @@
 export default {
 	tags: [
-		"pets"
+		"homepages"
 	],
-	"layout": "partials/pets/post.njk",
+	"layout": "partials/home/post.njk",
     "date": "Last Modified",
 };

@@ -1,3 +1,4 @@
+# SEO setup
 title: "PERSEPHONE UNIVERSITY"
 description: "A description here.."
 favicon: "/logo.svg"
@@ -5,12 +6,19 @@ image: "/logo.svg"
 language: "en"
 locale: "en_US"
 formspree_id: "https://formspree.io/f/"
-url: "https://research.000000076.xyz" #localhost:8080 or research.000000076.xyz
+# url: "https://research.000000076.xyz" #localhost:8080 or research.000000076.xyz
+url: http://localhost:8080
 metasocial: 
  - facebook: "https://www.facebook.com/"
  - twitteruser: "@username"
  - twitter: "https://x.com/user"
 
+# Color Configuration
+primary_color: D81717
+secondary_color: ec5033
+dark_color: c93c22
+
+# Setup Header Area
 header: 
  logo: /logo.svg
  title1: PERSEPHONE
@@ -34,32 +42,62 @@ header:
  sub_title: "An 11ty Library Research Guide Template"
  info: "This 11ty Library Research Guide Template is desigend to be a database free start to creating a long term #minicomp style library and research guide."
 
+# Home Sidebar Setup
+homes_sidebar: 
+ title: Home
+ collections: homepages
+ text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+ key: "1"
+
+# Pets Sidebar Setup
 pets_sidebar: 
  title: Pets
+ collections: pets
  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
  key: .
 
+# recipes Sidebar Setup
 recipes_sidebar: 
  title: Recipes
+ collections: recipes
  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
  key: l
 
+# Portfolios Sidebar Setup
 portfolios_sidebar: 
  title: Portfolio
+ collections: portfolios
  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
  key: r
 
- 
+# Sidebar and RSS Partials Setup 
 sidebar:
- rss_title: RSS Feeds
+ rss:
+  title: RSS Feeds
+  item: 
+   - name: Adam Dj Brett
+     link: https://adamdjbrett.com
+   - name: 11ty Official
+     link: https://11ty.dev
+   - name: Netlify
+     link: https://netlify.com
+   - name: Vercel
+     link: https://vercel.com
+   - name: Cloudflare
+     link: https://cloudflare.com
+   - name: Github
+     link: https://github.com
  author_title: Author
 
+# Footer Notes Setup
 foot_notes: 
  last_update: Last Updated
  url: URL
  print: Print Page
  print_key: p
 
+
+# Footer Setup
 footer: 
  nav: 
     - title: Nav 1
@@ -124,6 +162,7 @@ footer:
   text4: Adam DJ Brett
   text4_url: https://adamdjbrett.com
 
+# Website Author
 author: 
  name: "Adam DJ Brett"
  email: "info@adamdjbrett.com"

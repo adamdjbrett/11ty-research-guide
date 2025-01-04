@@ -2,12 +2,12 @@
 
 <div class="accordion-item">
 <h3 class="accordion-header">
-<button class="accordion-button show btn-maron" type="button" data-bs-toggle="collapse" accesskey="{{metadata.homes_sidebar.key}}" 
+<button class="accordion-button collapsed btn-maron" type="button" data-bs-toggle="collapse" accesskey="{{metadata.homes_sidebar.key}}" 
 data-bs-target="#collapse{{metadata.homes_sidebar.key}}" aria-expanded="false" aria-controls="collapse{{metadata.homes_sidebar.key}}"><strong>
 {{metadata.homes_sidebar.title}}
 </strong></button>
 </h3>
-<div id="collapse{{metadata.homes_sidebar.key}}" class="accordion-collapse collapse show" data-bs-parent="#accordion{{metadata.homes_sidebar.key}}">
+<div id="collapse{{metadata.homes_sidebar.key}}" class="accordion-collapse collapse" data-bs-parent="#accordion{{metadata.homes_sidebar.key}}">
 <div class="accordion-body p-1">
 <div class="ms-3">
 {% for si in collections.homepages | reverse %}
@@ -16,6 +16,7 @@ data-bs-target="#collapse{{metadata.homes_sidebar.key}}" aria-expanded="false" a
 </div>
 </div>
 </div>
+
 
 <div class="accordion-item">
 <h3 class="accordion-header">
@@ -34,6 +35,7 @@ data-bs-target="#collapse{{metadata.pets_sidebar.key}}" aria-expanded="false" ar
 </div>
 </div>
 
+
 <div class="accordion-item">
 <h3 class="accordion-header">
 <button class="accordion-button collapsed btn-maron" type="button" data-bs-toggle="collapse" accesskey="{{metadata.recipes_sidebar.key}}"
@@ -51,18 +53,22 @@ data-bs-target="#collapse{{metadata.recipes_sidebar.key}}" aria-expanded="false"
 </div>
 </div>
 
+
+
 <div class="accordion-item">
 <h3 class="accordion-header">
-<button class="accordion-button collapsed btn-maron" type="button" accesskey="{{metadata.portfolios_sidebar.key}}"
-data-bs-toggle="collapse" data-bs-target="#collapse{{metadata.portfolios_sidebar.key}}" aria-expanded="false" aria-controls="collapse{{metadata.portfolios_sidebar.key}}"><strong>
+<button class="accordion-button show btn-maron" type="button" data-bs-toggle="collapse" accesskey="{{metadata.portfolios_sidebar.key}}" 
+data-bs-target="#collapse{{metadata.portfolios_sidebar.key}}" aria-expanded="false" aria-controls="collapse{{metadata.portfolios_sidebar.key}}"><strong>
 {{metadata.portfolios_sidebar.title}}
 </strong></button>
 </h3>
-<div id="collapse{{metadata.portfolios_sidebar.key}}" class="accordion-collapse collapse" data-bs-parent="#accordion{{metadata.portfolios_sidebar.key}}">
+<div id="collapse{{metadata.portfolios_sidebar.key}}" class="accordion-collapse collapse show" data-bs-parent="#accordion{{metadata.portfolios_sidebar.key}}">
 <div class="accordion-body p-1">
 <div class="ms-3">
 {% for si in collections.portfolios | reverse %}
-<a class="btn btn-outline-danger col-12  mt-1 mb-1" href="{{metadata.url}}/{{metadata.portfolios_sidebar.collections}}#{{si.url}}"> {{si.data.title}}</a>{% endfor %}
+{% if si.url == page.url %} <a href="{{metadata.url}}/{{metadata.portfolios_sidebar.collections}}#{{si.url}}" class="btn btn-outline-danger col-12  mt-1 mb-1 actives">{% else %}
+ <a href="{{metadata.url}}/{{metadata.portfolios_sidebar.collections}}#{{si.url}}" class="btn btn-outline-danger col-12  mt-1 mb-1">{% endif %} {{si.data.title}}</a>{% endfor %}
+
 </div>
 </div>
 </div>

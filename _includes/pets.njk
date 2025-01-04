@@ -1,0 +1,32 @@
+---
+layout: base.njk
+---
+<main class="print">
+{% include "partials/header.njk" %}
+<div class="container ">
+<div class="row mts-5">
+
+<div class="col-md-3 p-3">
+{% include "partials/pets/collections_pets.njk" %}
+{% include "partials/rss.njk" %}
+</div>
+
+<div class="col-md-9 p-3">
+{% for pet in collections.pets | reverse %}
+<div class="card mb-3" id="{{pet.url}}">
+<h3 class="card-header text-maron"><strong><a href="{{pet.url}}" class="no-deco text-maron">{{pet.data.title}}</a></strong></h3>
+<div class="card-body">
+<heading-anchors>
+<article>{% for j in pet.data.excerpt %}<p>{{j.text}}</p>{% endfor %}</article>
+<p><a href="{{pet.url}}">Read More</a></p>
+</heading-anchors>
+</div>
+</div>
+{% endfor %}
+</div>
+
+</div>
+</div>
+{% include "partials/footer_note.njk" %}
+</main>
+{% include "partials/pets/article_print.njk" %}

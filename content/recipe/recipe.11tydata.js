@@ -1,7 +1,7 @@
 export default {
 	tags: [
-		"pets"
+		"recipes"
 	],
-	"layout": "partials/pets/post.njk",
+	"layout": "partials/recipes/post.njk",
     "date": "Last Modified",
 };

@@ -2,5 +2,6 @@ export default {
 	tags: [
 		"portfolios"
 	],
-	"layout": "post.njk",
+	"layout": "partials/portfolios/post.njk",
+    "date": "Last Modified",
 };

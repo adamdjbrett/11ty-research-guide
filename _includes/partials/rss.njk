@@ -1,8 +1,8 @@
 <div class="card mt-5">
-<div class="card-header bg-orange"><h4>{{metadata.sidebar.rss_title}}</h4></div>
+<div class="card-header bg-orange"><h4>{{metadata.sidebar.rss.title}}</h4></div>
 <div class="card-body">
 <ul class="text-small">
-{% for s in rss | limit(5) %}<li class="mb-3"><a class="no-deco text-maron" href="{{s.slug}}"> {{s.title.rendered}}</a></li>{% endfor %}
+{% for s in metadata.sidebar.rss.item %}<li class="mb-3"><a class="no-deco text-maron" href="{{s.link}}"> {{s.name}}</a></li>{% endfor %}
 </ul>
 </div>
 </div>

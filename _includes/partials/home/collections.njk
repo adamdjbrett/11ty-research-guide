@@ -11,7 +11,7 @@ data-bs-target="#collapse{{metadata.homes_sidebar.key}}" aria-expanded="false" a
 <div class="accordion-body p-1">
 <div class="ms-3">
 {% for si in collections.homepages | reverse %}
-<a class="btn btn-outline-danger col-12  mt-1 mb-1" href="{{metadata.url}}/#{{si.url}}"> {{si.data.title}}</a>{% endfor %}
+<a class="btn btn-outline-danger col-12  mt-1 mb-1" href="#{{si.url}}"> {{si.data.title}}</a>{% endfor %}
 </div>
 </div>
 </div>

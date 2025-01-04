@@ -1,0 +1,32 @@
+---
+layout: base.njk
+---
+<main class="print">
+{% include "partials/header.njk" %}
+<div class="container ">
+<div class="row mts-5">
+
+<div class="col-md-3 p-3">
+{% include "partials/recipes/collections.njk" %}
+{% include "partials/rss.njk" %}
+</div>
+
+<div class="col-md-9 p-3">
+{% for portfolio in collections.recipes | reverse %}
+<div class="card mb-3" id="{{portfolio.url}}">
+<h3 class="card-header text-maron"><strong><a href="{{portfolio.url}}" class="no-deco text-maron">{{portfolio.data.title}}</a></strong></h3>
+<div class="card-body">
+<heading-anchors>
+<article>{% for j in portfolio.data.excerpt %}<p>{{j.text}}</p>{% endfor %}</article>
+<p><a href="{{portfolio.url}}">Read More</a></p>
+</heading-anchors>
+</div>
+</div>
+{% endfor %}
+</div>
+
+</div>
+</div>
+{% include "partials/footer_note.njk" %}
+</main>
+{% include "partials/recipes/article_print.njk" %}
