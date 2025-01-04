@@ -1,24 +1,24 @@
 title: "PERSEPHONE UNIVERSITY"
 description: "A description here.."
-favicon: "/pu.png"
-image: "/pu.png"
+favicon: "/logo.svg"
+image: "/logo.svg"
 language: "en"
 locale: "en_US"
 formspree_id: "https://formspree.io/f/"
-url: "localhost:8080"
+url: "https://research.000000076.xyz" #localhost:8080 or research.000000076.xyz
 metasocial: 
  - facebook: "https://www.facebook.com/"
  - twitteruser: "@username"
  - twitter: "https://x.com/user"
 
 header: 
- logo: /pu.png
+ logo: /logo.svg
  title1: PERSEPHONE
  title2: UNIVERSITY
  title_key: h
  title_subdomain: LIBRARIES
  title_subdomain_key: s
- subdomain_url: https://adamdjbrett.com
+ subdomain_url: https://adamDJbrett.com
  contact:
    button: Contact Us
    url: /contact
@@ -27,12 +27,12 @@ header:
   - title: Presphone University
     url: / 
     key: a
-  - title: Presphone University Libraries
+  - title: Demeter Libraries
     url: /
     key: b
  default_breadcumb: Home Page
- sub_title: "An Undergraduate's Guide to Funding and Publishing Research"
- info: This guide is designed for undergraduate students who are looking for research opportunities as an extension of or in addition to their coursework.
+ sub_title: "An 11ty Library Research Guide Template"
+ info: "This 11ty Library Research Guide Template is desigend to be a database free start to creating a long term #minicomp style library and research guide."
 
 pets_sidebar: 
  title: Pets
@@ -115,16 +115,16 @@ footer:
           key: g
  creativecommons:
   image: https://i.creativecommons.org/l/by-nc/4.0/88x31.png
-  text: Except where otherwise noted, this work by SBU Libraries is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+  text: Except where otherwise noted, this work by Perspheone University and Demeter Libraries is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
  copyrights: 
   text1: Built with
   text2: 11ty
   text2_url: https://11ty.dev
-  text3: Develope by
-  text4: Adam Dj Brett
+  text3: Developed by
+  text4: Adam DJ Brett
   text4_url: https://adamdjbrett.com
 
 author: 
- name: "Adam Dj Brett"
+ name: "Adam DJ Brett"
  email: "info@adamdjbrett.com"
  url: "https://adamdjbrett.com"
