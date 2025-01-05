@@ -6,8 +6,8 @@ image: "/logo.svg"
 language: "en"
 locale: "en_US"
 formspree_id: "https://formspree.io/f/"
-url: "https://research.000000076.xyz" #localhost:8080 or research.000000076.xyz
-#url: http://localhost:8080
+#url: "https://research.000000076.xyz" #localhost:8080 or research.000000076.xyz
+url: http://localhost:8080
 metasocial: 
  - facebook: "https://www.facebook.com/"
  - twitteruser: "@username"
@@ -16,7 +16,7 @@ metasocial:
 # Color Configuration
 primary_color: c44601 #F57600 #FF4136
 secondary_color: 054FB9 #0074D9
-dark_color: 0073E6 #270E48
+dark_color: 0F10AF #270E48
 
 # Setup Header Area
 header: 

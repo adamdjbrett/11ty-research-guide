@@ -2,12 +2,12 @@
 
 <div class="accordion-item">
 <h3 class="accordion-header">
-<button class="accordion-button show btn-maron" type="button" data-bs-toggle="collapse" accesskey="{{metadata.homes_sidebar.key}}" 
+<button class="accordion-button collapsed btn-maron" type="button" data-bs-toggle="collapse" accesskey="{{metadata.homes_sidebar.key}}" 
 data-bs-target="#collapse{{metadata.homes_sidebar.key}}" aria-expanded="false" aria-controls="collapse{{metadata.homes_sidebar.key}}"><strong>
 {{metadata.homes_sidebar.title}}
 </strong></button>
 </h3>
-<div id="collapse{{metadata.homes_sidebar.key}}" class="accordion-collapse collapse show" data-bs-parent="#accordion{{metadata.homes_sidebar.key}}">
+<div id="collapse{{metadata.homes_sidebar.key}}" class="accordion-collapse collapse" data-bs-parent="#accordion{{metadata.homes_sidebar.key}}">
 <div class="accordion-body p-1">
 <div class="ms-3">
 {% for si in collections.homepages | reverse %}

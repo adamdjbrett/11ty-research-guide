@@ -4,22 +4,49 @@ const pagination = {
 	data: "collections",
 	size: 1,
 	alias: "tag",
-	filter: ["all", "posts"],
+	filter: ["all", "pets" , "portfolios" , "recipes" , "homepages"],
 	// addAllPagesToCollections: true,
 };
 
 const eleventyExcludeFromCollections = true;
 
 const eleventyComputed = {
-	title: "Tagged '{{ tag }}'",
+	title: "'{{ tag }}'",
 	permalink: function(data) {
 		return `/tags/${this.slugify(data.tag)}/`;
 	}
 };
 ---
-<h1>Tagged “{{ tag }}”</h1>
+<main class="print">
+{% include "partials/header.njk" %}
+<div class="container ">
+<div class="row mts-5">
+
+<div class="col-md-3 p-3">
+{% include "partials/collections.njk" %}
+{% include "partials/rss.njk" %}
+</div>
+
+<div class="col-md-9 p-3">
 
 {% set postslist = collections[ tag ] %}
-{% include "postslist.njk" %}
+{% for post in postslist | reverse %}
+<div class="card mb-3">
+<h3 class="card-header text-maron"><strong><a href="{{home.url}}" class="no-deco text-maron">{{post.data.title}}</a></strong></h3>
+<div class="card-body">
+<article>
+{% if post.data.excerpt %}<p>{% for j in post.data.excerpt %}{{ j.text }}{% endfor %}{% else %}{{post.data.description}}</p>{% endif %}
+</article>
+<p><a href="{{post.url}}">Read More</a></p>
+</div>
+</div>
+{% endfor %}
+<div class="p-3 text-center"><a href="/tags" class="btn btn-light">Explore All Tags</a></div>
+</div>
 
-<p>See <a href="tags.njk">all tags</a>.</p>
+
+</div>
+</div>
+
+</main>
+
