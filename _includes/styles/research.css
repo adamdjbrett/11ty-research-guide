@@ -17,7 +17,7 @@ box-shadow: none;
 .text-small {font-size:14px;}
 .btn-maron:hover {background-color: #{{metadata.primary_color}}; color:White;}
 .btn-maron {border: solid 1px #{{metadata.primary_color}}; margin: 4px; }
-.text-maron,.border-danger {color:#{{metadata.primary_color}};}
+.text-maron {color:#{{metadata.primary_color}};}
 a {color:#{{metadata.secondary_color}};}
 .btn-danger,.btn-outline-danger:hover {background-color: #{{metadata.primary_color}};}
 .btn-outline-danger {border-color: #{{metadata.primary_color}}; color:#{{metadata.primary_color}};}
@@ -25,8 +25,10 @@ a {color:#{{metadata.secondary_color}};}
 .bg-maron {background-color: #{{metadata.primary_color}}; color:white;}
 .bg-orange {background-color: #{{metadata.secondary_color}}; color:white;}
 .text-orange,.border-orange{color:#{{metadata.dark_color}};}
-.btn-orange,.orange{background-color:#{{metadata.dark_color}};color:#fff}
-.btn-orange:hover{background-color:#{{metadata.secondary_color}};color:#fff}
+.btn-orange,.orange{background-color: #{{metadata.dark_color}}; color:#fff;}
+.btn-orange:hover{background-color: #{{metadata.secondary_color}}; color:#fff;}
+.btn-contact:hover{background-color: #{{metadata.secondary_color}}; color:#fff;}
+.btn-contact{background-color: #{{metadata.dark_color}}; color:#fff;}
 .btn-outline-orange{border:1px solid #{{metadata.secondary_color}};}
 .btn-outline-orange:hover,.actives {background-color:#{{metadata.secondary_color}};color:White;}
 blockquote{border-left:6px solid #{{metadata.dark_color}};margin:1.5em 10px;padding:.5em 10px;quotes:"\201C""\201D""\2018""\2019"}

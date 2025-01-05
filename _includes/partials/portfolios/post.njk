@@ -17,9 +17,7 @@ layout: base.njk
 <div class="card mb-3">
 <h3 class="card-header text-maron"><strong><a href="{{page.url}}" class="no-deco text-maron">{{title}}</a></strong></h3>
 <div class="card-body">
-<heading-anchors>
 <article>{{ content | safe }}</article>
-</heading-anchors>
 </div>
 <div class="card-footer">
 {%- if collections.portfolios %}

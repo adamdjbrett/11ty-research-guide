@@ -16,7 +16,7 @@ metasocial:
 # Color Configuration
 primary_color: c44601 #F57600 #FF4136
 secondary_color: 054FB9 #0074D9
-dark_color: 0073E6 #270E48
+dark_color: 0F10AF #270E48
 
 # Setup Header Area
 header: 

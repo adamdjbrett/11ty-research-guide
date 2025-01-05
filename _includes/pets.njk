@@ -16,10 +16,8 @@ layout: base.njk
 <div class="card mb-3" id="{{pet.url}}">
 <h3 class="card-header text-maron"><strong><a href="{{pet.url}}" class="no-deco text-maron">{{pet.data.title}}</a></strong></h3>
 <div class="card-body">
-<heading-anchors>
 <article>{% for j in pet.data.excerpt %}<p>{{j.text}}</p>{% endfor %}</article>
 <p><a href="{{pet.url}}">Read More</a></p>
-</heading-anchors>
 </div>
 </div>
 {% endfor %}
