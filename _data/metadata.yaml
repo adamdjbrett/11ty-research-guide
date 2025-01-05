@@ -14,9 +14,9 @@ metasocial:
  - twitter: "https://x.com/user"
 
 # Color Configuration
-primary_color: FF4136
-secondary_color: 7fdbff
-dark_color: 001f3f
+primary_color: c44601 #F57600 #FF4136
+secondary_color: 054FB9 #0074D9
+dark_color: 0073E6 #270E48
 
 # Setup Header Area
 header: 
@@ -100,57 +100,42 @@ foot_notes:
 # Footer Setup
 footer: 
  nav: 
-    - title: Nav 1
+    - title: Community
       item: 
-        - nav: nav1
-          url: /
-          key: q
-        - nav: nav2
-          url: /
-          key: w
-        - nav: nav3
-          url: /
-          key: e
-        - nav: nav4
-          url: /
-          key: r
-        - nav: nav5
-          url: /
-          key: t
-    - title: Nav 2
+        - nav: 11ty
+          url: https://1ty.dev
+        - nav: 11ty Bundle
+          url: https://11tybundle.dev/
+        - nav: 11ty Rocks
+          url: https://11ty.rocks/
+        - nav: 11ty Recipes
+          url: https://11ty.recipes/
+        - nav: 11ty Plugins
+          url: https://plug11ty.com/
+    - title: Templates
       item: 
-        - nav: nav1
-          url: /
-          key: z
-        - nav: nav2
-          url: /
-          key: x
-        - nav: nav3
-          url: /
-          key: v
-        - nav: nav4
-          url: /
-          key: n
-        - nav: nav5
-          url: /
-          key: m
-    - title: Nav 3
+        - nav: Main
+          url: https://000000076.xyz/
+        - nav: Clean
+          url: https://clean.000000076.xyz/
+        - nav: Eddy
+          url: https://eddy.000000076.xyz/
+        - nav: Multiplicity
+          url: https://github.com/lwojcik/eleventy-template-multiplicity
+        - nav: bharatkat
+          url: https://github.com/mesinkasir/bharatkat
+    - title: Pages
       item: 
-        - nav: nav1
+        - nav: Home
           url: /
-          key: f
-        - nav: nav2
-          url: /
-          key: k
-        - nav: nav3
-          url: /
-          key: j
-        - nav: nav4
-          url: /
-          key: h
-        - nav: nav5
-          url: /
-          key: g
+        - nav: About
+          url: /about/
+        - nav: Contact
+          url: /contact/
+        - nav: Feed
+          url: /feed/feed.xml
+        - nav: Tags
+          url: /tags/
  creativecommons:
   image: /img/88x31.png
   text: Except where otherwise noted, this work by Perspheone University and Demeter Libraries is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.

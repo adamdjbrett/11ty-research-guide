@@ -1,5 +1,9 @@
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="/pagefind/pagefind-ui.js"></script>
+<!-- using web.dev method of deferral to speed up page load -->
+<link rel="preload" href="/pagefind/pagefind-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/pagefind/pagefind-ui.css"></noscript>
+
+<!-- <link href="/pagefind/pagefind-ui.css" rel="stylesheet" defer>-->
+<script src="/pagefind/pagefind-ui.js" defer></script>
 <div id="search"></div>
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {

@@ -7,9 +7,10 @@ This project is FOSS and databseless, prioritizng longevity and portability.
 + Authors
 + Author Details
 + Print Article with Author
++ Confirm footnotes work
 
 
-## CHANGELOG#2
+## CHANGELOG
 + 11ty Eleventy
 + Bootstrap UI
 + The Power of metadata for all setup
@@ -42,12 +43,12 @@ This project is FOSS and databseless, prioritizng longevity and portability.
 + Footer Copyrights
 + Creative Commons Image
 + Creative Commons Text
-+ Foot Notes
++ Footnotes `confirm are these working`
 
-## CHANGELOG#1
-- make all red orange
-- where does the RSS panel fetch from? can this be set in the `metadata.yaml`? with functioning destinations? Trying using [relbib feed](https://relbib.de/relbib_docs/news.rss)
-- `pet`, `portfolio`, and  `recipes` need to load with the sidebar
+## Scores
+In Google Lighthouse for desktop the theme has 4 100s for Performance, Accessibility, Best Practices, and SEO.
+![Screenshot of four 100s for Performance, Accessibility, Best Practices, SEO in Google Lighthouse for Desktop Browsers](/desktop.png)
+
 
 ## Image Credit
 Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=156019">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=156019">Pixabay</a>

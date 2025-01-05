@@ -15,7 +15,7 @@
 {% for home in collections.homepages | reverse %}
 <h3 class="text-maron"><strong>{{home.data.title}}</strong></h3>
 {% for j in home.data.excerpt %}<p>{{j.text}}</p>{% endfor %}
-<p><a href="{{metadata.url}}{{home.url}}">Read More</a></p>
+<p><a href="{{metadata.url}}{{home.url}}">Learn more about {{home.data.title}}</a></p>
 </div>
 </div>
 {% endfor %}
