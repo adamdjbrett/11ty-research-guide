@@ -7,7 +7,8 @@ This project is FOSS and databseless, prioritizng longevity and portability.
 + Authors
 + Author Details
 + Print Article with Author
-+ Confirm footnotes work
++ ~no footnotes~
++ make read more tags... optional 
 
 
 ## CHANGELOG
@@ -43,7 +44,7 @@ This project is FOSS and databseless, prioritizng longevity and portability.
 + Footer Copyrights
 + Creative Commons Image
 + Creative Commons Text
-+ Footnotes `confirm are these working`
++ Footer notes
 
 ## Scores
 In Google Lighthouse for desktop the theme has 4 100s for Performance, Accessibility, Best Practices, and SEO.
