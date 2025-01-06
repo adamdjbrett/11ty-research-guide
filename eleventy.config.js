@@ -8,6 +8,7 @@ import markdownItFootnote from "markdown-it-footnote";
 import markdownItAttrs from 'markdown-it-attrs';
 import markdownItTableOfContents from "markdown-it-table-of-contents";
 import pluginTOC from 'eleventy-plugin-toc';
+import PurgeCSS from 'purgecss'; // Import PurgeCSS
 import pluginPWA from "eleventy-plugin-pwa-v2";
 import yaml from "js-yaml";
 import CleanCSS from "clean-css";
