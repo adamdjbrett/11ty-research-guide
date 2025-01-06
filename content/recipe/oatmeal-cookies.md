@@ -3,6 +3,16 @@ title: "Oatmeal Cookies"
 description: "Oatmeal cookies are a proverbial favorite with both kids and adults. This crisp and chewy cookie is loaded with oats, dried fruit, and chopped nuts."
 excerpt: 
  - text: "Oatmeal cookies are a proverbial favorite with both kids and adults. This crisp and chewy cookie is loaded with oats, dried fruit, and chopped nuts."
+author: 
+ - name: Maria Veronica
+   image: /img/authors/maria.png
+   email: mail@mail.com
+   about: 
+    - info: Lorep ipsum dolor siamet amet jabang bayi lanang wedok.
+    - info: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   contact: 
+    - info: Sesame Street , Longhingtown 123
+    - info: 6132-566-778
 ---
 
 Oatmeal cookies are a proverbial favorite with both kids and adults. This crisp and chewy cookie is loaded with oats, dried fruit, and chopped nuts.

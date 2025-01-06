@@ -3,6 +3,7 @@ layout: base.njk
 ---
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
+{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
 <main class="print">
 {% include "partials/header.njk" %}
 <div class="container ">
@@ -17,7 +18,7 @@ layout: base.njk
 <div class="card mb-3" id="{{home.url}}">
 <h3 class="card-header text-maron"><strong><a href="{{page.url}}" class="no-deco text-maron">{{title}}</a></strong></h3>
 <div class="card-body">
-<article>{{ content | safe }}</article>
+<article class="poem">{{ content | safe }}</article>
 </div>
 <div class="card-footer">
 {%- if collections.pets %}
