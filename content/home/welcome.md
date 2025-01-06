@@ -4,6 +4,16 @@ description: "A Welcome description"
 excerpt:
  - text:  Welcome to libguide project, this is a open source code to help who need build and develop libguide site with low cost.
 date: 2025-01-03
+author: 
+ - name: Alfonso Perez
+   image: "/img/authors/alfonso.png"
+   email: "mymail@mail.com"
+   about: 
+    - info: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+    - info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   contact: 
+    - info: Bolgana 157-224 , Ramez Elvuso
+    - info: 125-66-78
 tags:
  - welcome
  - welcome home

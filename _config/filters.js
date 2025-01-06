@@ -8,15 +8,6 @@ export default function(eleventyConfig) {
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat('yyyy-LL-dd');
 	});
-
-	eleventyConfig.addFilter("getAuthor", (authors,label) => {
-		let author = authors.filter(a => a.key === label)[0];
-		return author;
-	});
-
-	eleventyConfig.addFilter("getPostsByAuthor", (posts,author) => {
-		return posts.filter(a => a.data.author === author);
-	});
   
 		eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 		
@@ -39,12 +30,13 @@ export default function(eleventyConfig) {
 		return Math.min.apply(null, numbers);
 	});
 
+
 	eleventyConfig.addFilter("getKeys", target => {
 		return Object.keys(target);
 	});
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-		return (tags || []).filter(tag => ["all", "recipes", "pets", "portfolios" , "homepages" , "pages"].indexOf(tag) === -1);
+		return (tags || []).filter(tag => ["all", "recipes", "pets", "portfolios" , "homepages" , "pages","author" , "authors"].indexOf(tag) === -1);
 	});
 
 };

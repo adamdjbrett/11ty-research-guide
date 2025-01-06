@@ -17,27 +17,22 @@
 
 <div class="row">
 <div class="col-2">
-<h3 class="text-maron">Author</h3>
-<img class="img-fluid rounded img-profile mb-1" src="https://d2jv02qf7xgjwx.cloudfront.net/accounts/220807/profiles/219492/Fena_SJC_photo.png"/>
-<p><strong>
-Christina Erva
-</strong></p>
+<h3 class="text-maron">{{metadata.sidebar.author_title}}</h3>
+{% for a in author %}
+<img class="img-fluid rounded img-profile mb-1" alt="{{a.name}}" src="{{a.image}}"/>
+<p><strong>{{a.name}}</strong></p>
 </div>
 <div class="col-10">
 <p class="text-small">
 <strong>About: </strong><br/>
-Lorep ipsum dolor siamet amet jabang bayi lanang wedok.
-<br/>
-Undergraduate Research and Creative Activities (URECA) is a program that has been supported at SBU since 1987
+{% for info in a.about %}{{info.info}}<br/>{% endfor %}
 <br/>
 <strong>Contact: </strong><br/>
-CS 1-I Frank Melville Jr. Memorial Library
-<br/>631-632-1698
+{% for call in a.contact %}{{call.info}}<br/>{% endfor %}
 <br/>
-<a href="mailto:mymail@mail.com">
-Email Me 
-</a>
+<a href="mailto:{{a.email}}">{{a.email}}</a>
 </p>
+{% endfor %}
 </div>
 </div>
 

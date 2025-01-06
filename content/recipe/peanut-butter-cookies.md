@@ -3,6 +3,16 @@ title: "Peanut Butter Cookies"
 description: "A peanut butter cookie is a type of cookie that is distinguished for having peanut butter as a principal ingredient. The cookie generally originated in the United States, its development dating back to the 1910s."
 excerpt: 
  - text: "A peanut butter cookie is a type of cookie that is distinguished for having peanut butter as a principal ingredient. The cookie generally originated in the United States, its development dating back to the 1910s."
+author: 
+ - name: Maria Veronica
+   image: /img/authors/maria.png
+   email: mail@mail.com
+   about: 
+    - info: Lorep ipsum dolor siamet amet jabang bayi lanang wedok.
+    - info: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   contact: 
+    - info: Sesame Street , Longhingtown 123
+    - info: 6132-566-778
 ---
 
 A peanut butter cookie is a type of cookie that is distinguished for having peanut butter as a principal ingredient. The cookie generally originated in the United States, its development dating back to the 1910s.

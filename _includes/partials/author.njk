@@ -1,14 +1,13 @@
-<div class="card mt-5">
+{% if author %}<div class="card mt-5">
 <div class="card-header bg-orange">
 <h4>{{metadata.sidebar.author_title}}</h4></div>
 <div class="card-body row">
+{% for a in author %}
 <div class="col-md-12 col-4">
-<img class="img-fluid rounded img-profile mb-1" src="https://d2jv02qf7xgjwx.cloudfront.net/accounts/220807/profiles/219492/Fena_SJC_photo.png"/>
-<p class="text-center"><strong>
-Christina Erva
-</strong>
+<img class="img-fluid rounded img-profile mb-1" alt="{{a.name}}" width="100%" height="100%" src="{% if a.image %}{{a.image}}{% else %}/img/authors/no-image.png{% endif %}"/>
+<p class="text-center"><strong>{% if a.name %}{{a.name}}{% else %}Anonymous{% endif %}</strong>
 <br/>
-<a href="" class="btn btn-orange">
+<a href="mailto:{{a.email}}" class="btn btn-orange">
 Email Me 
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
   <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
@@ -17,17 +16,15 @@ Email Me
 </p>
 </div>
 <div class="col-md-12 col-8">
-<p class="text-small">
+{% if a.about %}<p class="text-small">
 <strong>About: </strong><br/>
-Lorep ipsum dolor siamet amet jabang bayi lanang wedok.
-<br/>
-Undergraduate Research and Creative Activities (URECA) is a program that has been supported at SBU since 1987
-</p>
-<p class="text-small">
+{% for me in a.about %}{{me.info}}<br/>{% endfor %}
+</p>{% endif %}
+{% if a.contact %}<p class="text-small">
 <strong>Contact: </strong><br/>
-CS 1-I Frank Melville Jr. Memorial Library
-<br/>631-632-1698
-</p>
+{% for call in a.contact %}{{call.info}}<br/>{% endfor %}
+</p>{% endif %}
 </div>
+{% endfor %}
 </div>
-</div>
+</div>{% endif %}
