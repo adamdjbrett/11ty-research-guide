@@ -3,14 +3,8 @@ Designed to be a Free and Open Source (FOSS) theme in the style of a research gu
 
 This project is FOSS and databseless, prioritizng longevity and portability. 
 
-## Next Update On Progress
-+ Authors
-+ Author Details
-+ Print Article with Author
-+ Confirm footnotes work
 
-
-## CHANGELOG
+## Features
 + 11ty Eleventy
 + Bootstrap UI
 + The Power of metadata for all setup
@@ -25,11 +19,8 @@ This project is FOSS and databseless, prioritizng longevity and portability.
 + Accesskey Functional
 + The Power of Sidebar Menu
 + Author Profile on Sidebar
-+ Print List Page
 + Print article page detail
-+ Print Article with Author (On Progress)
-+ Author Page (On Progress)
-+ Author Data (On Progress)
++ Print Article with Author
 + Tags List
 + Tags Detail Article
 + Update Date
@@ -43,7 +34,7 @@ This project is FOSS and databseless, prioritizng longevity and portability.
 + Footer Copyrights
 + Creative Commons Image
 + Creative Commons Text
-+ Footnotes `confirm are these working`
++ Contact Form
 
 ## Scores
 In Google Lighthouse for desktop the theme has 4 100s for Performance, Accessibility, Best Practices, and SEO.
