@@ -14,9 +14,9 @@ metasocial:
  - twitter: "https://x.com/user"
 
 # Color Configuration
-primary_color: c44601 #F57600 #FF4136
-secondary_color: 054FB9 #0074D9
-dark_color: 0F10AF #270E48
+primary_color: c44601 
+secondary_color: 054FB9 
+dark_color: 0F10AF 
 
 # Setup Header Area
 header: 
@@ -26,14 +26,14 @@ header:
  title_key: h
  title_subdomain: LIBRARIES
  title_subdomain_key: s
- subdomain_url: https://000000076.xyz/
+ subdomain_url: https://research.000000076.xyz #optional subdomain for more complex sites
  contact:
    button: Contact Us
    url: /contact
    key: c
  breadcumb: 
   - title: Presphone University
-    url: / 
+    url: / #can set to a higher level domain 
     key: a
   - title: Demeter Libraries
     url: /
@@ -75,7 +75,7 @@ sidebar:
  rss:
   title: RSS Feeds
   item: 
-   - name: Adam Dj Brett
+   - name: Adam DJ Brett
      link: https://adamdjbrett.com
    - name: 11ty Official
      link: https://11ty.dev
@@ -86,7 +86,7 @@ sidebar:
    - name: Cloudflare
      link: https://cloudflare.com
    - name: Github
-     link: https://github.com
+     link: https://github.com/adamdjbrett/11ty-research-guide
  author_title: Author
 
 # Footer Notes Setup

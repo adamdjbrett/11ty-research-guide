@@ -39,7 +39,7 @@ This project is FOSS and databseless, prioritizng longevity and portability.
 
 ## Scores
 In Google Lighthouse for mobile the theme has 4 100s for Performance, Accessibility, Best Practices, and SEO.
-![Mobile target](/mobiles.png)
+![Screenshot of four 100s for Performance, Accessibility, Best Practices, SEO in Google Lighthouse for Mobile browsers](/mobile.png)
 
 In Google Lighthouse for desktop the theme has 4 100s for Performance, Accessibility, Best Practices, and SEO.
 ![Screenshot of four 100s for Performance, Accessibility, Best Practices, SEO in Google Lighthouse for Desktop Browsers](/desktop.png)
