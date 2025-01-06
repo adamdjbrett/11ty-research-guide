@@ -38,9 +38,14 @@ This project is FOSS and databseless, prioritizng longevity and portability.
 
 
 ## Scores
+In Google Lighthouse for mobile the theme has 4 100s for Performance, Accessibility, Best Practices, and SEO.
+![Mobile target](/mobiles.png)
+
 In Google Lighthouse for desktop the theme has 4 100s for Performance, Accessibility, Best Practices, and SEO.
 ![Screenshot of four 100s for Performance, Accessibility, Best Practices, SEO in Google Lighthouse for Desktop Browsers](/desktop.png)
 
+
+Developer [Adam Dj Brett](https://adamdjbrett.com)
 
 ## Image Credit
 Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=156019">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=156019">Pixabay</a>
