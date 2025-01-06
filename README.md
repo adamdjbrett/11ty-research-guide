@@ -3,7 +3,6 @@ Designed to be a Free and Open Source (FOSS) theme in the style of a research gu
 
 This project is FOSS and databseless, prioritizng longevity and portability. 
 
-
 ## Features
 + 11ty Eleventy
 + Bootstrap UI
@@ -35,6 +34,8 @@ This project is FOSS and databseless, prioritizng longevity and portability.
 + Creative Commons Image
 + Creative Commons Text
 + Contact Form
++ Footer notes for print and url link
+
 
 ## Scores
 In Google Lighthouse for desktop the theme has 4 100s for Performance, Accessibility, Best Practices, and SEO.
