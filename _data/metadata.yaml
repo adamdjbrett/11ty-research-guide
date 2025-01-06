@@ -73,20 +73,20 @@ portfolios_sidebar:
 # Sidebar and RSS Partials Setup 
 sidebar:
  rss:
-  title: RSS Feeds
+  title: Links
   item: 
-   - name: Adam DJ Brett
-     link: https://adamdjbrett.com
+   - name: Download 11ty Research Guide
+     link: https://github.com/adamdjbrett/11ty-research-guide
    - name: 11ty Official
      link: https://11ty.dev
-   - name: Netlify
+   - name: Netlify Hosting
      link: https://netlify.com
-   - name: Vercel
+   - name: Vercel Hosting
      link: https://vercel.com
-   - name: Cloudflare
+   - name: Cloudflare Hosting
      link: https://cloudflare.com
-   - name: Github
-     link: https://github.com/adamdjbrett/11ty-research-guide
+   - name: Render Hosting
+     link: https://render.com/
  author_title: Author
 
 # Footer Notes Setup
